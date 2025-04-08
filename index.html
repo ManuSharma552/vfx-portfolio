@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="[Your Name] - VFX Artist & Animator Portfolio. Showcasing high-quality visual effects projects.">
+    <meta name="keywords" content="VFX, Visual Effects, Animation, Portfolio, [Your Name], Motion Graphics, Compositing">
+    <title>[Your Name] - VFX Portfolio</title>
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="main-header">
+        <nav>
+            <div class="logo">[Your Logo/Name]</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger"> <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="video-background">
+                <video playsinline autoplay muted loop poster="images/hero-bg-placeholder.jpg" id="bgvid">
+                    <source src="videos/hero-background.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                 </div>
+            <div class="hero-content">
+                <h1 class="fade-in">Creating Worlds Beyond Imagination</h1>
+                <p class="fade-in delay-1">High-end Visual Effects & Animation by [Your Name]</p>
+                <a href="#portfolio" class="cta-button fade-in delay-2">View My Work</a>
+            </div>
+            <div class="scroll-down-indicator">
+                <a href="#about"><span></span>Scroll</a>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <div class="container about-container">
+                <div class="about-image animate-on-scroll">
+                    <img src="images/profile.jpg" alt="[Your Name] - VFX Artist">
+                </div>
+                <div class="about-text animate-on-scroll">
+                    <h2>About Me</h2>
+                    <p>Hello! I'm [Your Name], a passionate VFX artist and animator based in [Your Location]. My creative journey began with [mention starting point]...</p>
+                    <p>I specialize in [mention key areas like compositing, 3D modeling, simulation, motion graphics] and thrive on bringing complex ideas to life...</p>
+                    <h3>Skills</h3>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-check-circle"></i> Nuke / After Effects</li>
+                        <li><i class="fas fa-check-circle"></i> Maya / Blender / Houdini</li>
+                        <li><i class="fas fa-check-circle"></i> Particle Simulations</li>
+                        <li><i class="fas fa-check-circle"></i> Matte Painting</li>
+                        <li><i class="fas fa-check-circle"></i> Motion Tracking</li>
+                        </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="content-section bg-light">
+            <div class="container">
+                <h2>Portfolio Showcase</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item animate-on-scroll" data-project-id="proj1">
+                        <img src="images/portfolio/project1-thumb.jpg" alt="Project 1 Title">
+                        <div class="portfolio-overlay">
+                            <h3>Project Title 1</h3>
+                            <p>Brief Description / Role</p>
+                            <span class="view-project-btn">View Details</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item animate-on-scroll" data-project-id="proj2">
+                        <img src="images/portfolio/project2-thumb.jpg" alt="Project 2 Title">
+                        <div class="portfolio-overlay">
+                            <h3>Project Title 2</h3>
+                            <p>Compositing Lead</p>
+                            <span class="view-project-btn">View Details</span>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+            <div id="project-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h2 id="modal-title">Project Title</h2>
+                    <div id="modal-video-container">
+                        </div>
+                    <p id="modal-description">Detailed project description...</p>
+                    <p><strong>Software Used:</strong> <span id="modal-software"></span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="content-section">
+            <div class="container">
+                <h2>Services Offered</h2>
+                <div class="services-grid">
+                    <div class="service-card animate-on-scroll">
+                        <i class="fas fa-magic fa-3x service-icon"></i>
+                        <h3>Compositing</h3>
+                        <p>Seamless integration of live-action footage with CG elements using Nuke, After Effects.</p>
+                    </div>
+                    <div class="service-card animate-on-scroll">
+                        <i class="fas fa-cube fa-3x service-icon"></i>
+                        <h3>3D Modeling & Animation</h3>
+                        <p>Creating realistic or stylized 3D assets and bringing them to life with animation.</p>
+                    </div>
+                     <div class="service-card animate-on-scroll">
+                        <i class="fas fa-fire fa-3x service-icon"></i>
+                        <h3>FX Simulation</h3>
+                        <p>Dynamic simulations for fire, smoke, water, explosions, and destruction using Houdini/Blender.</p>
+                    </div>
+                     <div class="service-card animate-on-scroll">
+                        <i class="fas fa-film fa-3x service-icon"></i>
+                        <h3>Motion Graphics</h3>
+                        <p>Engaging animated titles, infographics, and visual elements for commercials and film.</p>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="blog" class="content-section bg-light">
+            <div class="container">
+                <h2>Latest News & Insights</h2>
+                <div class="blog-posts-grid">
+                    <article class="blog-post-card animate-on-scroll">
+                        <img src="images/blog/post1-thumb.jpg" alt="Blog Post 1 Title">
+                        <div class="blog-post-content">
+                            <h3>Breakdown: Recent Sci-Fi Project</h3>
+                            <p class="post-meta">Published on: <time datetime="2025-04-01">April 1, 2025</time></p>
+                            <p>A quick look behind the scenes of the compositing process for the 'Nebula' short film...</p>
+                            <a href="#" class="read-more-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="blog-post-card animate-on-scroll">
+                        <img src="images/blog/post2-thumb.jpg" alt="Blog Post 2 Title">
+                        <div class="blog-post-content">
+                            <h3>VFX Industry Trends for 2025</h3>
+                             <p class="post-meta">Published on: <time datetime="2025-03-15">March 15, 2025</time></p>
+                            <p>Exploring the impact of AI and real-time rendering in the current VFX landscape...</p>
+                            <a href="#" class="read-more-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    </div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+             <div class="container contact-container">
+                <h2>Get In Touch</h2>
+                <p>Have a project in mind or just want to say hello? Fill out the form below.</p>
+                <form id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <div class="error-message">Please enter your name.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                         <div class="error-message">Please enter a valid email address.</div>
+                    </div>
+                     <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                         <div class="error-message">Please enter your message.</div>
+                    </div>
+                    <button type="submit" class="cta-button">Send Message</button>
+                    <div id="form-status"></div> </form>
+             </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="container footer-content">
+            <div class="footer-social">
+                <a href="[Your LinkedIn URL]" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="[Your ArtStation/Vimeo URL]" target="_blank" aria-label="ArtStation/Vimeo"><i class="fab fa-artstation"></i></a>
+                 <a href="[Your Instagram URL]" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                 </div>
+            <p>&copy; <span id="current-year"></span> [Your Name]. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/form-validation.js"></script>
+
+    </body>
+</html>
